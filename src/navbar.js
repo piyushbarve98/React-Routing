@@ -1,17 +1,17 @@
 import React from "react";
-
+import {Link, NavLink } from 'react-router-dom';
 function Navbar(){
   return(
     <div className='navbar is-success'>
       <div className='navbar-brand'>
-        <a className='title is-size-4 navbar-item'>ANIME</a>
+        <a href='home' className='title is-size-3 navbar-item'>ANIME</a>
       </div>
       <div className='navbar-menu'>
         <div className='navbar-end'>
-        <a href='home' className='navbar-item'>Home</a>
-        <a href='about' className='navbar-item'>About</a>
-        <a href='contact' className='navbar-item'>Contact</a>
-        <a className='navbar-item'>Help</a>
+        <Link to='home' className='navbar-item'>Home</Link>
+        <Link to='about' className='navbar-item'>About</Link>
+        <Link to='contact' className='navbar-item'>Contact</Link>
+        <Link to='home' className='navbar-item'>Help</Link>
 
         </div>
       </div>

@@ -9,9 +9,9 @@ import Contact from './Contact';
 export default function App() {
   return (
     <div className="App">
-    <Navbar />
+    
     <Router>
-      
+      <Navbar />
       <Route path="/home" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
