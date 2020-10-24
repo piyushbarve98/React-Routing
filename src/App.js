@@ -5,6 +5,7 @@ import Navbar from "./navbar";
 import Home from './home';
 import About from './About';
 import Contact from './Contact';
+import Posts from './posts';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Route path="/home" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <Route path="/posts/:post_id" component={Posts} />
     </Router>
      
     </div>
