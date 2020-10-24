@@ -11,7 +11,7 @@ function Navbar(){
         <Link to='home' className='navbar-item'>Home</Link>
         <Link to='about' className='navbar-item'>About</Link>
         <Link to='contact' className='navbar-item'>Contact</Link>
-        <Link to='home' className='navbar-item'>Help</Link>
+        <Link to='help' className='navbar-item'>Help</Link>
 
         </div>
       </div>

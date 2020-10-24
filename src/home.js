@@ -1,5 +1,6 @@
 import React,{Component} from "react";
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 
 class Home extends Component{
 
@@ -19,11 +20,11 @@ class Home extends Component{
     const {posts} = this.state;
     const postsList = posts.length ? (posts.map((post)=>{
       return(
-      <div className='post card mt-5'>
+      <div className='post card mt-5' key={post.id}>
         <div className='card-header'>
-          <div className='card-header-title is-centered'>
+          <Link to={'' + post.id} className='card-header-title is-centered'>
             {post.title}
-          </div>
+          </Link>
         </div>
         <div className='card-content'>
         
